@@ -34,7 +34,7 @@ post '/' do
 
   if params[:box_file_key]
     iframe_src = "https://www.box.com/embed_widget/000415338140/s/#{params[:box_file_key]}"
-  elsif
+  elsif session[:launch_presentation_return_url]
     iframe_src =  "https://www.box.com/embed_widget/000415338141/files/0/f/0?promoted_app_ids=2288"
   else
     iframe_src =  "https://www.box.com/embed_widget/000415338140/files/0/f/0"
