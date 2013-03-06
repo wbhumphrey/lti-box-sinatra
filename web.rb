@@ -1,5 +1,6 @@
 require 'sinatra'
 enable :sessions
+set :session_secret, ENV['SESSION_SECRET'] ||= 'super secret'
 
 get '/' do
   "Invalid Launch Request"
