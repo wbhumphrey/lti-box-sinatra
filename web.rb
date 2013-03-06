@@ -7,7 +7,7 @@ get '/' do
 end
 
 get '/return_content' do
-  return 'Invalid return URL' unless session.key? :launch_presentation_return_url
+  return session.to_yaml unless session.key? :launch_presentation_return_url
   return 'Expected box view URL' unless params.key? 'view_url'
 
   require 'URI'
