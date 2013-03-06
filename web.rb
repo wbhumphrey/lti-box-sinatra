@@ -4,7 +4,7 @@ get '/' do
   "Invalid Launch Request"
 end
 
-post '/return_content' do
+get '/return_content' do
   params.to_yaml
 end
 
