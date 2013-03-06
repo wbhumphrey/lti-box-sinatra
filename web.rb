@@ -12,6 +12,7 @@ get '/return_content' do
 
   require 'uri'
   require 'open-uri'
+  require 'cgi'
 
   redirect_url = URI.parse session[:launch_presentation_return_url]
 
