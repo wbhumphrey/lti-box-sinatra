@@ -1,23 +1,40 @@
+GIT
+  remote: https://github.com/wbhumphrey/ims-lti.git
+  revision: a5eb769554a010bcf7be9d83ec3af95265fed2ba
+  specs:
+    ims-lti (1.1.4)
+      builder
+      oauth (~> 0.4.5)
+      uuid
+
 GEM
   remote: http://rubygems.org/
   specs:
+    builder (3.2.0)
     daemons (1.1.9)
-    eventmachine (0.12.10)
-    json (1.7.6)
-    rack (1.4.1)
+    eventmachine (1.0.3)
+    json (1.7.7)
+    macaddr (1.6.1)
+      systemu (~> 2.5.0)
+    oauth (0.4.7)
+    rack (1.5.2)
     sinatra (1.1.0)
       rack (~> 1.1)
       tilt (~> 1.1)
-    thin (1.4.1)
+    systemu (2.5.2)
+    thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    tilt (1.3.3)
+    tilt (1.3.6)
+    uuid (2.3.7)
+      macaddr (~> 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  ims-lti!
   json
   sinatra (= 1.1.0)
   thin
